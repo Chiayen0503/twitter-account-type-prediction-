@@ -7,7 +7,7 @@ Created on Sat Dec 22 21:07:05 2018
 """
 
 import pandas as pd
-
+#drop irrelavant variables
 df = pd.read_csv("df_train_30_11.csv")
 df = df.drop("id",axis = 1)
 df = df.drop("spam",axis = 1)
